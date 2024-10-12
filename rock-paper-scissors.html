@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taş Kağıt Makas</title>
+  </head>
+  <body>
+    <p>Taş Kağıt Makas</p>
+    <button
+      onclick="
+        const randomNumber1 = Math.random()
+
+        let bilgisayarSeçimi1 ='';
+        
+        if(randomNumber1 >= 0 && randomNumber1 < 1 / 3){
+            bilgisayarSeçimi1 = 'taş';
+        } else if (randomNumber1 >= 1/3 && randomNumber1 < 2 / 3) {
+            bilgisayarSeçimi1 ='kağıt';
+        }else if (randomNumber1 >=2 / 3 && randomNumber1 < 1 ) {
+            bilgisayarSeçimi1 ='makas';
+            
+        }
+
+        
+
+        let result1 ='' ;
+        if (bilgisayarSeçimi1 === 'taş') {
+        result1 = 'Berabere' ;
+        } else if (bilgisayarSeçimi1 === 'kağıt') {
+            result1 = 'Kaybettin !'
+        } else if (bilgisayarSeçimi1 === 'makas') {
+            result1 = 'Kazandın !'
+        }
+
+        alert ( `Senin seçimin taş. Bilgisayarın seçimi ${bilgisayarSeçimi1}.${result1}`);
+        
+        "
+    >
+      Taş
+    </button>
+    <button
+      onclick="
+        const randomNumber2 = Math.random()
+
+        let bilgisayarSeçimi2 ='';
+        
+        if(randomNumber2 >= 0 && randomNumber2 < 1 / 3){
+            bilgisayarSeçimi2 = 'taş';
+        } else if (randomNumber2 >= 1/3 && randomNumber2 < 2 / 3) {
+            bilgisayarSeçimi2 ='kağıt';
+        }else if (randomNumber2 >=2 / 3 && randomNumber2 < 1 ) {
+            bilgisayarSeçimi2 ='makas';
+            
+        }
+
+        
+
+        let result2 ='' ;
+        if (bilgisayarSeçimi2 === 'taş') {
+        result2 = 'Kazandın' ;
+        } else if (bilgisayarSeçimi2 === 'kağıt') {
+            result2 = 'Berabere !' ;
+        } else if (bilgisayarSeçimi2 === 'makas') {
+            result2 = 'Kaybettin !' ;
+        }
+
+        alert ( `Senin seçimin kağıt. Bilgisayarın seçimi ${bilgisayarSeçimi2}.${result2}`) ;"
+    >
+      Kağıt
+    </button>
+    <button
+      onclick="
+        const randomNumber3 = Math.random()
+
+    let bilgisayarSeçimi3 ='';
+
+    if(randomNumber3 >= 0 && randomNumber3 < 1 / 3){
+        bilgisayarSeçimi3 = 'taş';
+    } else if (randomNumber3 >= 1/3 && randomNumber3 < 2 / 3) {
+        bilgisayarSeçimi3 ='kağıt';
+    }else if (randomNumber3 >=2 / 3 && randomNumber3 < 1 ) {
+        bilgisayarSeçimi3 ='makas';
+        
+    }
+
+    
+
+    let result3 = '' ;
+
+    if (bilgisayarSeçimi3 === 'taş') {
+    result3 = 'Kaybettin' ;
+    } else if (bilgisayarSeçimi3 === 'kağıt') {
+        result3 = 'Kazadın !' ;
+    } else if (bilgisayarSeçimi3 === 'makas') {
+        result3 = 'Berabere !' ;
+    }
+
+    alert ( `Senin seçimin Makas. Bilgisayarın seçimi ${bilgisayarSeçimi3}.${result3}`);"
+    >
+      Makas
+    </button>
+
+    <script></script>
+  </body>
+</html>
